@@ -18,7 +18,7 @@ function init(e) {
       }
     } else {
       index = 0;
-      alert("Wrong!");
+      //alert("Wrong!");
     }
   });
 }
