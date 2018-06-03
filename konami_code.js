@@ -3,12 +3,13 @@ let index=0;
 
 function init(e) {
   // Write your JavaScript code inside the init() function
+  document.body.addEventListener('keydown', function(e){
     const key = parseInt(e.detail || e.which);
 
     if (key === code[index]) {
       index++;
 
-      if (index === alphabet.length) {
+      if (index === code.length) {
         alert("Hurray!");
 
         index = 0;
@@ -17,5 +18,5 @@ function init(e) {
       index = 0;
       alert("Wrong!");
     }
-
+  });
 }
